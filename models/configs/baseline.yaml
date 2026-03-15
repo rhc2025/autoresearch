@@ -1,0 +1,32 @@
+# Baseline config — EfficientNet-B0 on mel spectrograms
+# Sprint 0: establish first ROC-AUC number
+
+backbone: tf_efficientnet_b0_ns
+n_classes: 206  # placeholder — update once species list is finalized
+pretrained: true
+
+# Audio
+sample_rate: 32000
+chunk_duration: 5
+n_mels: 128
+n_fft: 2048
+hop_length: 512
+f_min: 60
+f_max: 16000
+
+# Training
+learning_rate: 1.0e-3
+weight_decay: 1.0e-4
+batch_size: 32
+epochs: 30
+dropout: 0.3
+mixup_alpha: 0.4
+label_smoothing: 0.05
+scheduler: cosine
+warmup_epochs: 3
+seed: 42
+time_budget: 1800  # 30 min
+
+# Validation
+val_split: 0.1
+cv_strategy: random  # TODO: switch to site-stratified

@@ -1,8 +1,8 @@
 # Status Board — Pantanal Sentinel
 
-**Last Updated**: 2026-03-14
+**Last Updated**: 2026-03-15
 **Current Sprint**: Sprint 0 — Foundation (Mar 14–21)
-**Days Until Entry Deadline**: 74
+**Days Until Entry Deadline**: 73
 
 ---
 
@@ -10,11 +10,11 @@
 
 | Workstream | Agent | Status | Last Update |
 |---|---|---|---|
-| PM / Orchestration | Claude Code | Active | Roadmap and status board created |
-| Research | Gemini / Claude | In Progress | Researching BirdCLEF 2025 winning solutions |
-| Data & Features | — | Not Started | Waiting on Kaggle data download |
-| Model Training | — | Not Started | Blocked on baseline setup |
-| Evaluation | — | Not Started | Need evaluate.py |
+| PM / Orchestration | Claude Code | Active | Sprint 0 tracking, scaffolding code |
+| Research | Claude | In Progress | Perch v2 technique card done; winning solutions research underway |
+| Data & Features | — | Scaffolded | `data/dataset.py` ready; waiting on competition data |
+| Model Training | — | Scaffolded | `models/train.py` + EfficientNet backbone ready; blocked on data |
+| Evaluation | — | Scaffolded | `eval/evaluate.py` implemented (macro ROC-AUC) |
 | Inference Optimization | — | Not Started | Sprint 4 focus |
 | Ecological Priors | — | Not Started | Sprint 2 focus |
 | Working Notes Paper | — | Not Started | Sprint 6 focus |
@@ -57,10 +57,13 @@
 - [x] Join BirdCLEF+ 2026 competition
 - [x] Create design document
 - [x] Create roadmap and status board
+- [x] Research Perch v2 → technique card at `research/technique_cards/perch_v2_embeddings.md`
 - [ ] Research winning solutions (in progress)
-- [ ] Research Perch v2 (in progress)
-- [ ] Research competition dataset (in progress)
-- [ ] Download competition data
-- [ ] Set up local dev environment
-- [ ] Build baseline model
-- [ ] Implement ROC-AUC evaluator
+- [ ] Research competition dataset
+- [x] Implement ROC-AUC evaluator → `eval/evaluate.py`
+- [x] Scaffold baseline model → `models/train.py`, `models/backbones/efficientnet.py`
+- [x] Scaffold dataset pipeline → `data/dataset.py`
+- [ ] Download competition data (BLOCKER)
+- [ ] Set up local dev environment (bird_env, dependencies)
+- [ ] Build and train baseline model (blocked on data)
+- [ ] Establish first ROC-AUC baseline
