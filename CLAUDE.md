@@ -3,11 +3,20 @@
 ## Project
 BirdCLEF+ 2026 competition entry. Identify wildlife vocalizations (birds, amphibians, mammals, reptiles, insects) in Pantanal soundscapes. Maximize macro-averaged ROC-AUC. CPU-only inference ≤ 90 minutes.
 
+## Multi-Model Setup
+This repo is shared between **Claude Code** and **Antigravity** (Google Agentic IDE).
+- Read `CONTRIBUTING.md` for coordination protocol
+- Read `HANDOFF.md` for pending cross-model tasks
+- Use your branch prefix: `claude/` or `antigravity/`
+- Update `status_board.md` and `HANDOFF.md` after significant work
+
 ## Key Files
 - `pantanal_sentinel_design.md` — full architecture and agent design
 - `roadmap.md` — sprint plan with deadlines
 - `status_board.md` — current progress (update after completing work)
 - `decisions_log.md` — architectural decisions
+- `CONTRIBUTING.md` — multi-model coordination protocol
+- `HANDOFF.md` — cross-model task queue and sync
 - `program.md` — original autoresearch experiment loop pattern (reference)
 
 ## Deadlines

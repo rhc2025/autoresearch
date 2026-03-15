@@ -10,14 +10,20 @@
 
 | Workstream | Agent | Status | Last Update |
 |---|---|---|---|
-| PM / Orchestration | Claude Code | Active | Sprint 0 tracking, scaffolding code |
-| Research | Claude | In Progress | Perch v2 technique card done; winning solutions research underway |
-| Data & Features | — | Scaffolded | `data/dataset.py` ready; waiting on competition data |
-| Model Training | — | Scaffolded | `models/train.py` + EfficientNet backbone ready; blocked on data |
-| Evaluation | — | Scaffolded | `eval/evaluate.py` implemented (macro ROC-AUC) |
-| Inference Optimization | — | Not Started | Sprint 4 focus |
-| Ecological Priors | — | Not Started | Sprint 2 focus |
-| Working Notes Paper | — | Not Started | Sprint 6 focus |
+| PM / Orchestration | Claude Code | Active | Sprint 0 tracking, coordination framework built |
+| Research | Claude Code | Done (Sprint 0) | 5 technique cards + winning solutions teardown complete |
+| Data & Features | **Antigravity** | Awaiting Handoff | `data/dataset.py` scaffolded; needs competition data download + EDA |
+| Model Training | Claude Code | Scaffolded | `models/train.py` + EfficientNet backbone ready; blocked on data |
+| Evaluation | Claude Code | Scaffolded | `eval/evaluate.py` implemented (macro ROC-AUC) |
+| Inference Optimization | Claude Code | Not Started | Sprint 4 focus |
+| Ecological Priors | **Antigravity** | Not Started | Sprint 2 focus |
+| Working Notes Paper | Claude Code | Not Started | Sprint 6 focus |
+
+### Active Models
+| Model | Platform | Last Active | Current Task |
+|-------|----------|-------------|-------------|
+| Claude Code | Anthropic CLI | 2026-03-15 | Coordination framework, research, scaffolding |
+| Antigravity | Google Agentic IDE | — | Onboarding — see `HANDOFF.md` |
 
 ---
 
@@ -58,7 +64,7 @@
 - [x] Create design document
 - [x] Create roadmap and status board
 - [x] Research Perch v2 → technique card at `research/technique_cards/perch_v2_embeddings.md`
-- [ ] Research winning solutions (in progress)
+- [x] Research winning solutions → `research/winning_solutions.md` (5 technique cards)
 - [ ] Research competition dataset
 - [x] Implement ROC-AUC evaluator → `eval/evaluate.py`
 - [x] Scaffold baseline model → `models/train.py`, `models/backbones/efficientnet.py`
