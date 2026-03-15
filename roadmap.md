@@ -13,13 +13,13 @@
 - [ ] Complete Kaggle notebook account setup
 - [ ] Download competition dataset
 - [ ] Run initial EDA on soundscape data
-- [ ] Research winning solutions from BirdCLEF 2025
-- [ ] Produce technique cards for top approaches
-- [ ] Research Perch v2 embeddings
+- [x] Research winning solutions from BirdCLEF 2025
+- [x] Produce technique cards for top approaches (5 cards)
+- [x] Research Perch v2 embeddings
 - [ ] Set up local development environment (bird_env, Python 3.12)
-- [ ] Build baseline model (single backbone, mel spectrograms)
-- [ ] Implement evaluate.py matching Kaggle's macro ROC-AUC
-- [ ] Establish first ROC-AUC baseline number
+- [x] Build baseline model (single backbone, mel spectrograms) — scaffolded, needs data
+- [x] Implement evaluate.py matching Kaggle's macro ROC-AUC
+- [ ] Establish first ROC-AUC baseline number — blocked on data
 - [ ] Register for CLEF 2026 lab (deadline: Apr 23)
 
 ### Deliverables
